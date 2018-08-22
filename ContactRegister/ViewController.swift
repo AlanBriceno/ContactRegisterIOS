@@ -82,7 +82,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
             
             if isValidData() {
                 encodeContact()
-                let finalRegistry = ContactsResult(Contacts: contacts, Location: Location(Latitude: 15, Longitude: 15), RegisteredBy: RegisteredBy(Name: "Alan Alexis Briceño"), Type: 1)
+                let finalRegistry = ContactsResult(Contacts: contacts, Location: Location(Latitude: 15, Longitude: 15), RegisteredBy: RegisteredBy(Name: "Alan Alexis Briceño Brito"), Type: 1)
                 
                 submitPost(post: finalRegistry) { (error) in
                     if let error = error {
@@ -310,7 +310,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         inputCompany.resignFirstResponder()
-        print("tapped")
         inputEmail.resignFirstResponder()
         inputLastName.resignFirstResponder()
         inputName.resignFirstResponder()
