@@ -42,14 +42,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         pendingContactLabel.text = ""
         tblView.isHidden = true
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-    
-        view.addGestureRecognizer(tap)
-        
-    }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
